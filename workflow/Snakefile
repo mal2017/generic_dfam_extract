@@ -1,0 +1,12 @@
+from snakemake.utils import min_version
+min_version("6.0")
+
+configfile: "config/config.yaml"
+
+
+include: "rules/get_repeats.smk"
+
+
+rule all:
+    input:
+        multiext("results/dfam/dfam_","sequences.fasta","summary.txt","lineages.txt"),

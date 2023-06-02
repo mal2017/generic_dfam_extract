@@ -1,0 +1,5 @@
+DFAM_CURATED_H5: https://www.dfam.org/releases/Dfam_3.7/families/Dfam_curatedonly.h5.gz
+
+FAMDB_ARGS: "--curated -ad 'mus musculus'"
+
+DFAM_CLASSES: [SINE,LINE,LTR,DNA,RC]
