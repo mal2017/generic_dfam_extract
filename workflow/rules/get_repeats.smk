@@ -29,7 +29,7 @@ rule extract_from_dfam:
         """
         RPM_PATH=$(dirname $(which RepeatMasker)) &&
         FAMDBPY_PATH=$RPM_PATH/../share/RepeatMasker/famdb.py &&
-        $FAMDBPY_PATH -i {input.h5} families \
+        $(dirname $(which RepeatMasker))/python $FAMDBPY_PATH -i {input.h5} families \
             -f fasta_name --class {wildcards.rep_class} {params.famdb_args} > {output.fa}
         """
 
