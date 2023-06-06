@@ -5,3 +5,4 @@ channels:
 dependencies:
   - repeatmasker=4.1.5
   - h5py=3.8.0
+  - python
